@@ -6,19 +6,20 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": true, // 允许含有js文件，以及和js进行交互
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // module.exports="" expert=xx 处理为es6Module
+    "allowSyntheticDefaultImports": true,  // 和上一个配置一起自动开启，
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    // "strictNullChecks": false, 
+    "forceConsistentCasingInFileNames": true, // 导入的时候，是否区分文件名的大小写
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "module": "esnext", // 最新的模块化标准 动态导入等 TS + babel + webpack" : webpack -> TS -> js -> babel
+    "moduleResolution": "node",// 模块解析的方式
+    "resolveJsonModule": true, // 是否允许解析json文件
+    "isolatedModules": true, // 是否把每一个文件当成一个模块
+    "noEmit": true,// 不生成js文件
+    "jsx": "react-jsx" // 解析jsx的方式
   },
   "include": [
     "src"
